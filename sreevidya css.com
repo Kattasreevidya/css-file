@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chatbot</title>
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="main">
+    <div><input id="input" type="text" placeholder="Say something..." autocomplete="off"/></div>
+</div>
+</body>
+</html>
+body { 
+    color: #421; 
+    font-weight: bold; 
+    font-size: 18px; 
+    font-family: "Courier New"; 
+    background: rgb(200, 232, 241); 
+
+
+}
+body::after {
+    content: "";
+    background-image: url("bot.png");
+    background-repeat: repeat-y; 
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+span { 
+    color: rgb(36, 17, 119); 
+} 
+::-webkit-input-placeholder { 
+    color: #711 
+}
+#main { 
+    position: fixed; 
+    top: 40%; 
+    right: 200px; 
+    width: 400px; 
+    border: 0px solid #421; 
+    padding: 40px; 
+}
+#main div { 
+    margin: 10px; 
+} 
+#input { 
+    border: 0; 
+    padding: 5px; 
+    border: 1px solid #421; 
+}
+
